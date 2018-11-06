@@ -1,0 +1,1 @@
+# Magestore Environment
