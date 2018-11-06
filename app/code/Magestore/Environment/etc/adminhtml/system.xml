@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<!--
+  ~ Copyright © 2018 Magestore. All rights reserved.
+  ~ See COPYING.txt for license details.
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="magestore" translate="label" sortOrder="400">
+            <label>Magestore Omnichannel</label>
+        </tab>
+        <section id="magestore_environment" translate="label" sortOrder="10000" type="text" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Environment</label>
+            <class>separator-top</class>
+            <tab>magestore</tab>
+            <resource>Magestore_Environment::config</resource>
+            <group id="webpos" translate="label" sortOrder="100" type="text" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>PWA POS</label>
+                <field id="sharing_acount" translate="label" sortOrder="10" type="select" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Pos Account Sharing</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[ If set to Yes, you can login POS from multiple devices in same account.
+                                       Default setting No to improves security.
+                         ]]>
+                    </comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
