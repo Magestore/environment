@@ -6,4 +6,4 @@
 
 use \Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Magestore_Environment', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Magestore_DemoEnv', __DIR__);

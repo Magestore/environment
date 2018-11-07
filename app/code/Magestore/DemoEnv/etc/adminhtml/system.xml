@@ -9,11 +9,11 @@
         <tab id="magestore" translate="label" sortOrder="400">
             <label>Magestore Omnichannel</label>
         </tab>
-        <section id="magestore_environment" translate="label" sortOrder="10000" type="text" showInDefault="1" showInWebsite="0" showInStore="0">
-            <label>Environment</label>
+        <section id="demo_env" translate="label" sortOrder="10000" type="text" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Demo Environment</label>
             <class>separator-top</class>
             <tab>magestore</tab>
-            <resource>Magestore_Environment::config</resource>
+            <resource>Magestore_DemoEnv::config</resource>
             <group id="webpos" translate="label" sortOrder="100" type="text" showInDefault="1" showInWebsite="0" showInStore="0">
                 <label>PWA POS</label>
                 <field id="sharing_acount" translate="label" sortOrder="10" type="select" showInDefault="1" showInWebsite="0" showInStore="0">

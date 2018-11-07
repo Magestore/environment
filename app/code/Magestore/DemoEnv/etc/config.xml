@@ -6,10 +6,10 @@
   -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
     <default>
-        <magestore_environment>
+        <demo_env>
             <webpos>
                 <sharing_acount>1</sharing_acount>
             </webpos>
-        </magestore_environment>
+        </demo_env>
     </default>
 </config>

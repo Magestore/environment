@@ -3,7 +3,7 @@
  * Copyright © 2018 Magestore. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Magestore\Environment\Plugin\Webpos\Model\Staff;
+namespace Magestore\DemoEnv\Plugin\Webpos\Model\Staff;
 
 
 class StaffManagement
@@ -32,7 +32,7 @@ class StaffManagement
      */
     public function afterLogin($subject, $loginResult, $staff)
     {
-        $isSharingAccount = $this->scopeConfig->getValue('magestore_environment/webpos/sharing_acount');
+        $isSharingAccount = $this->scopeConfig->getValue('demo_env/webpos/sharing_acount');
         if (!$isSharingAccount) {
             return $loginResult;
         }
